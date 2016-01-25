@@ -275,6 +275,7 @@ class homefeatured extends Module implements WidgetInterface
     {
         return [
             'products' => $this->getProducts(),
+            'allProductsLink' => Context::getContext()->link->getCategoryLink($this->getConfigFieldsValues()['HOME_FEATURED_CAT']),
         ];
     }
 
